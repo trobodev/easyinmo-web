@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Easyinmo - Software inmobiliario con IA</title>
+  <meta name="description" content="Easyinmo es un CRM inmobiliario sencillo, independiente y potenciado con inteligencia artificial para autónomos y pequeñas agencias. Únete a la lista de espera.">
+  <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- ============ CABECERA ============ -->
+  <header class="header" id="header">
+    <div class="container header__inner">
+      <a href="#inicio" class="header__logo" aria-label="Easyinmo, ir al inicio">
+        <img src="assets/logo.svg" alt="Easyinmo · Software inmobiliario con IA" width="192" height="52">
+      </a>
+
+      <nav class="nav" id="nav" aria-label="Navegación principal">
+        <a href="#funciones">Funciones</a>
+        <a href="#por-que">Por qué Easyinmo</a>
+        <a href="#equipo">Equipo</a>
+        <a href="#faq">Preguntas</a>
+        <a href="#contacto" class="btn btn--primary btn--sm">Lista de espera</a>
+      </nav>
+
+      <button class="nav-toggle" id="navToggle" aria-label="Abrir menú" aria-expanded="false" aria-controls="nav">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <main>
+    <!-- ============ HERO ============ -->
+    <section class="hero" id="inicio">
+      <div class="container hero__inner">
+        <div class="hero__text reveal">
+          <span class="badge">En desarrollo · Lanzamiento en la Comunidad de Madrid</span>
+          <h1>El CRM inmobiliario que <span class="accent">trabaja para ti</span></h1>
+          <p class="lead">Gestiona inmuebles, contactos y tu página web desde un solo lugar, con inteligencia artificial que te ahorra tiempo. Sencillo, transparente e independiente.</p>
+          <div class="hero__ctas">
+            <a href="#contacto" class="btn btn--primary">Únete a la lista de espera</a>
+            <a href="#funciones" class="btn btn--ghost">Ver funciones</a>
+          </div>
+        </div>
+
+        <!-- Maqueta ilustrativa hecha con HTML/CSS (no es una captura real) -->
+        <div class="hero__visual reveal" aria-hidden="true">
+          <div class="mock">
+            <div class="mock__bar"><span></span><span></span><span></span></div>
+            <div class="mock__body">
+              <div class="mock__card">
+                <div class="mock__img">
+                  <!-- Ilustración de un edificio de pisos -->
+                  <svg viewBox="0 0 88 64" role="img" aria-label="Ilustración de un piso">
+                    <rect width="88" height="64" fill="#E9F7F0"/>
+                    <circle cx="74" cy="13" r="6" fill="#FFD27A"/>
+                    <rect x="0" y="56" width="88" height="8" fill="#BFE6D2"/>
+                    <rect x="22" y="12" width="40" height="46" rx="2" fill="#163A4A"/>
+                    <rect x="20" y="9" width="44" height="5" rx="1.5" fill="#2DB87D"/>
+                    <g fill="#FFE9A8">
+                      <rect x="27" y="18" width="7" height="7" rx="1"/><rect x="38.5" y="18" width="7" height="7" rx="1"/><rect x="50" y="18" width="7" height="7" rx="1"/>
+                      <rect x="27" y="30" width="7" height="7" rx="1"/><rect x="50" y="30" width="7" height="7" rx="1"/>
+                    </g>
+                    <g fill="#7FA3B3">
+                      <rect x="38.5" y="30" width="7" height="7" rx="1"/>
+                      <rect x="27" y="42" width="7" height="7" rx="1"/><rect x="50" y="42" width="7" height="7" rx="1"/>
+                    </g>
+                    <rect x="25.5" y="37" width="10" height="1.6" fill="#2DB87D"/><rect x="48.5" y="37" width="10" height="1.6" fill="#2DB87D"/>
+                    <rect x="38" y="46" width="8" height="12" rx="1" fill="#2DB87D"/>
+                    <rect x="9" y="44" width="2.4" height="13" fill="#7A5A3A"/>
+                    <circle cx="10.2" cy="41" r="7" fill="#2DB87D"/>
+                    <rect x="73" y="47" width="2" height="10" fill="#7A5A3A"/>
+                    <circle cx="74" cy="45" r="5" fill="#3FC98E"/>
+                  </svg>
+                </div>
+                <div>
+                  <p class="mock__title">Piso luminoso en Móstoles</p>
+                  <p class="mock__meta">3 hab. · 2 baños · 95 m²</p>
+                </div>
+              </div>
+              <div class="mock__ai">
+                <span class="chip">✦ Descripción generada con IA</span>
+                <div class="line"></div><div class="line"></div><div class="line line--short"></div>
+              </div>
+              <div class="mock__leads">
+                <span class="chip">✦ Cruce de oportunidades inteligente con IA</span>
+                <div class="lead-row"><span>Laura M.</span><span class="score score--high">92</span></div>
+                <div class="lead-row"><span>Carlos R.</span><span class="score score--mid">67</span></div>
+                <div class="lead-row"><span>Ana P.</span><span class="score score--low">34</span></div>
+              </div>
+            </div>
+          </div>
+          <p class="mock__caption">Vista ilustrativa del producto</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ EL PROBLEMA ============ -->
+    <section class="section section--soft">
+      <div class="container">
+        <h2 class="section__title reveal">¿Te suena?</h2>
+        <div class="grid grid--3">
+          <article class="pain reveal">
+            <h3>Programas complicados</h3>
+            <p>Herramientas pensadas para grandes redes, con curvas de aprendizaje que no tienes tiempo de recorrer.</p>
+          </article>
+          <article class="pain reveal">
+            <h3>Precios con letra pequeña</h3>
+            <p>Un precio de entrada atractivo que crece con cada complemento, módulo o usuario adicional.</p>
+          </article>
+          <article class="pain reveal">
+            <h3>Dependencia de un portal</h3>
+            <p>Software que pertenece a los mismos portales con los que trabajas. Tu negocio, sus reglas.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ FUNCIONES ============ -->
+    <section class="section" id="funciones">
+      <div class="container">
+        <h2 class="section__title reveal">Todo lo que necesitas, nada que te sobre</h2>
+        <p class="section__intro reveal">Las herramientas esenciales de un CRM inmobiliario, con la inteligencia artificial integrada desde el primer día.</p>
+
+        <div class="grid grid--3">
+          <article class="feature reveal">
+            <div class="feature__icon"><svg viewBox="0 0 24 24"><path d="M3 10.5 12 3l9 7.5V21h-6v-6H9v6H3z"/></svg></div>
+            <h3>Inmuebles y contactos</h3>
+            <p>Centraliza propiedades, propietarios, compradores y leads en un único lugar.</p>
+          </article>
+          <article class="feature reveal">
+            <div class="feature__icon"><svg viewBox="0 0 24 24"><path d="M3 4h18v16H3zM3 8h18M7 6h.01M10 6h.01"/></svg></div>
+            <h3>Tu web en un clic</h3>
+            <p>Crea la página web de tu agencia y modifícala describiendo los cambios con tus palabras.</p>
+          </article>
+          <article class="feature reveal">
+            <div class="feature__icon"><svg viewBox="0 0 24 24"><path d="M4 12h12M12 6l6 6-6 6M20 4v16"/></svg></div>
+            <h3>Publicación en portales</h3>
+            <p>Publica tus inmuebles en los principales portales nacionales e internacionales sin duplicar trabajo.</p>
+          </article>
+          <article class="feature reveal">
+            <div class="feature__icon"><svg viewBox="0 0 24 24"><path d="M12 3l1.8 5.2L19 10l-5.2 1.8L12 17l-1.8-5.2L5 10l5.2-1.8zM19 16l.8 2.2L22 19l-2.2.8L19 22l-.8-2.2L16 19l2.2-.8z"/></svg></div>
+            <h3>Descripciones con IA</h3>
+            <p>Genera descripciones de inmuebles profesionales en segundos, listas para publicar.</p>
+          </article>
+          <article class="feature reveal">
+            <div class="feature__icon"><svg viewBox="0 0 24 24"><path d="M4 20V10M10 20V4M16 20v-7M22 20H2"/></svg></div>
+            <h3>Puntuación de leads</h3>
+            <p>Descubre qué contactos tienen más probabilidad de cierre y prioriza tu tiempo.</p>
+          </article>
+          <article class="feature reveal">
+            <div class="feature__icon"><svg viewBox="0 0 24 24"><path d="M8 7a4 4 0 1 0 0 10M16 7a4 4 0 1 1 0 10M8 12h8"/></svg></div>
+            <h3>Emparejamiento inteligente</h3>
+            <p>Cruza automáticamente las demandas de tus clientes con los inmuebles de tu cartera.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ DASHBOARD (maqueta ilustrativa) ============ -->
+    <section class="section section--soft" id="dashboard">
+      <div class="container split">
+        <div class="split__text reveal">
+          <h2>Tu día, organizado de un vistazo</h2>
+          <p>Un panel que te dice qué hacer hoy: nuevos contactos, visitas pendientes y oportunidades detectadas por la inteligencia artificial, todo en un mismo lugar.</p>
+          <ul class="checks">
+            <li>Notificaciones en tiempo real</li>
+            <li>Sugerencias de la IA sobre a quién llamar primero</li>
+            <li>Mensajes de seguimiento redactados en un clic</li>
+          </ul>
+        </div>
+
+        <div class="split__visual reveal" aria-hidden="true">
+          <div class="mock dash">
+            <div class="mock__bar"><span></span><span></span><span></span></div>
+            <div class="dash__body">
+              <div class="dash__head">
+                <p class="dash__hello">Buenos días, Elena</p>
+                <span class="dash__date">Hoy</span>
+              </div>
+
+              <div class="dash__kpis">
+                <div class="kpi"><span class="kpi__num">24</span><span class="kpi__label">Inmuebles activos</span></div>
+                <div class="kpi"><span class="kpi__num">7</span><span class="kpi__label">Leads nuevos</span></div>
+                <div class="kpi"><span class="kpi__num">3</span><span class="kpi__label">Visitas hoy</span></div>
+              </div>
+
+              <div class="dash__ai">
+                <span class="chip">✦ Sugerencia de la IA</span>
+                <p>Laura M. tiene un <strong>92 %</strong> de probabilidad de cierre. Llámala hoy.</p>
+                <span class="dash__btn">Generar mensaje</span>
+              </div>
+
+              <p class="dash__subtitle">Notificaciones</p>
+              <ul class="notifs">
+                <li><span class="dot dot--green"></span><div><strong>Nuevo lead</strong> desde tu web: piso en Móstoles<small>Hace 5 min</small></div></li>
+                <li><span class="dot dot--amber"></span><div><strong>Visita confirmada</strong> mañana a las 10:00<small>Hace 1 h</small></div></li>
+                <li><span class="dot dot--navy"></span><div><strong>La IA ha detectado</strong> 2 inmuebles que encajan con Carlos R.<small>Hace 3 h</small></div></li>
+              </ul>
+            </div>
+          </div>
+          <p class="mock__caption">Vista ilustrativa del producto</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ POR QUÉ EASYINMO ============ -->
+    <section class="section section--dark" id="por-que">
+      <div class="container">
+        <h2 class="section__title reveal">Por qué Easyinmo</h2>
+        <div class="grid grid--4">
+          <div class="pillar reveal">
+            <span class="pillar__num">01</span>
+            <h3>Independiente</h3>
+            <p>No pertenecemos a ningún portal inmobiliario. Trabajamos para ti.</p>
+          </div>
+          <div class="pillar reveal">
+            <span class="pillar__num">02</span>
+            <h3>Precio transparente</h3>
+            <p>Planes claros, sin complementos ocultos ni permanencia.</p>
+          </div>
+          <div class="pillar reveal">
+            <span class="pillar__num">03</span>
+            <h3>Sencillo de verdad</h3>
+            <p>Diseñado para empezar a trabajar desde el primer día, sin formaciones.</p>
+          </div>
+          <div class="pillar reveal">
+            <span class="pillar__num">04</span>
+            <h3>Soporte cercano</h3>
+            <p>Un equipo que conoce el sector y resuelve, no que deriva.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ EQUIPO ============ -->
+    <section class="section" id="equipo">
+      <div class="container">
+        <h2 class="section__title reveal">Quiénes somos</h2>
+        <p class="section__intro reveal">Combinamos experiencia en el sector inmobiliario con formación en desarrollo de software.</p>
+        <div class="grid grid--2 team">
+          <article class="member reveal">
+            <img class="member__avatar" src="assets/team/roberto.jpg" alt="Roberto Trobo" width="80" height="80" loading="lazy">
+            <div>
+              <h3>Roberto Trobo</h3>
+              <p class="member__role">Cofundador · Desarrollo y soporte</p>
+              <p>Tres años en el departamento de soporte de un CRM inmobiliario. Conoce de primera mano lo que piden las agencias.</p>
+            </div>
+          </article>
+          <article class="member reveal">
+            <img class="member__avatar" src="assets/team/jefersson.jpg" alt="Jefersson Stam" width="80" height="80" loading="lazy">
+            <div>
+              <h3>Jefersson Stam</h3>
+              <p class="member__role">Cofundador · Dirección y marketing</p>
+              <p>Experiencia profesional en Tecnocasa. Conoce desde dentro el día a día de una agencia inmobiliaria.</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ FAQ ============ -->
+    <section class="section section--soft" id="faq">
+      <div class="container container--narrow">
+        <h2 class="section__title reveal">Preguntas frecuentes</h2>
+        <details class="faq reveal">
+          <summary>¿Cuándo estará disponible Easyinmo?</summary>
+          <p>Estamos desarrollando la primera versión. Si te unes a la lista de espera, serás de los primeros en probarla.</p>
+        </details>
+        <details class="faq reveal">
+          <summary>¿Cuánto costará?</summary>
+          <p>Todavía estamos definiendo los planes. Lo que sí tenemos claro: precios transparentes y sin complementos ocultos.</p>
+        </details>
+        <details class="faq reveal">
+          <summary>¿Habrá prueba gratuita?</summary>
+          <p>Sí. Podrás probar Easyinmo gratis antes de decidir si quieres contratarlo.</p>
+        </details>
+        <details class="faq reveal">
+          <summary>¿Para quién está pensado?</summary>
+          <p>Para profesionales autónomos y agencias inmobiliarias pequeñas que buscan una herramienta moderna, sencilla y asequible.</p>
+        </details>
+      </div>
+    </section>
+
+    <!-- ============ CONTACTO ============ -->
+    <section class="section" id="contacto">
+      <div class="container contact">
+        <div class="contact__text reveal">
+          <h2 class="section__title">Únete a la lista de espera</h2>
+          <p>¿Tienes una agencia o trabajas como agente inmobiliario? Cuéntanos qué necesitas y te avisaremos cuando Easyinmo esté listo.</p>
+        </div>
+
+        <!--
+          Formulario funcional mediante Web3Forms (servicio gratuito).
+          Sustituye TU_ACCESS_KEY por la clave que te envían al registrarte en web3forms.com
+        -->
+        <form class="form reveal" id="contactForm" novalidate>
+          <input type="hidden" name="access_key" value="TU_ACCESS_KEY">
+          <input type="hidden" name="subject" value="Nuevo mensaje desde Easyinmo">
+          <!-- Campo trampa anti-spam: los humanos no lo ven, los bots lo rellenan -->
+          <input type="checkbox" name="botcheck" class="hidden" tabindex="-1" autocomplete="off">
+
+          <div class="form__row">
+            <label for="nombre">Nombre</label>
+            <input type="text" id="nombre" name="nombre" required autocomplete="name">
+          </div>
+          <div class="form__row">
+            <label for="email">Correo electrónico</label>
+            <input type="email" id="email" name="email" required autocomplete="email">
+          </div>
+          <div class="form__row">
+            <label for="perfil">Eres…</label>
+            <select id="perfil" name="perfil">
+              <option>Agente autónomo</option>
+              <option>Agencia pequeña (1–5 personas)</option>
+              <option>Agencia mediana o grande</option>
+              <option>Otro</option>
+            </select>
+          </div>
+          <div class="form__row">
+            <label for="mensaje">Mensaje <span class="optional">(opcional)</span></label>
+            <textarea id="mensaje" name="mensaje" rows="4"></textarea>
+          </div>
+          <label class="form__check">
+            <input type="checkbox" id="privacidad" name="privacidad" required>
+            <span>He leído y acepto la <a href="privacidad.html" target="_blank">política de privacidad</a>.</span>
+          </label>
+
+          <button type="submit" class="btn btn--primary btn--full">Enviar</button>
+          <p class="form__status" id="formStatus" role="status" aria-live="polite"></p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <!-- ============ PIE ============ -->
+  <footer class="footer">
+    <div class="container footer__inner">
+      <img src="assets/logo-white.svg" alt="Easyinmo" width="130" height="27">
+      <nav class="footer__links" aria-label="Enlaces legales">
+        <a href="aviso-legal.html">Aviso legal</a>
+        <a href="privacidad.html">Privacidad</a>
+        <a href="#contacto">Contacto</a>
+      </nav>
+      <p class="footer__copy">© <span id="year">2026</span> Easyinmo. Todos los derechos reservados.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
